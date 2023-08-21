@@ -16,7 +16,7 @@ python train.py --model_type CNN --epochs 10
 ```
 For SVM:
 ```bash
-python train.py --model_type SVM --data_index 0
+python train.py --model_type SVM
 ```
 
 ### `test.py`
