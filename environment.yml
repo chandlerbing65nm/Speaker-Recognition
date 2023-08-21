@@ -1,4 +1,0 @@
-name: ntnu
-channels:
-  - defaults
-prefix: /home/paperspace/miniconda3/envs/ntnu

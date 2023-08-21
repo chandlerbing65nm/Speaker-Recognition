@@ -10,8 +10,13 @@ The `train.py` script is responsible for training the models. It defines a custo
 
 #### Usage
 
+For CNN:
 ```bash
-python train.py --root_dir /path/to/dataset --model_type CNN --batch_size 2 --num_classes 3 --epochs 10
+python train.py --model_type CNN --epochs 10
+```
+For SVM:
+```bash
+python train.py --model_type SVM --data_index 0
 ```
 
 ### `test.py`
@@ -22,11 +27,11 @@ The `test.py` script is used to test the trained models on a test dataset. It in
 
 For CNN:
 ```bash
-python test.py --file_path /path/to/testdata --model_type CNN --model_path /path/to/model --data_index 0
+python test.py --model_type CNN --data_index 0
 ```
 For SVM:
 ```bash
-python test.py --file_path /path/to/testdata --model_type SVM --model_path /path/to/model --scaler_path /path/to/scaler --data_index 0
+python test.py --model_type SVM --data_index 0
 ```
 
 ## Dataset Structure
